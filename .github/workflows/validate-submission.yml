@@ -1,0 +1,38 @@
+name: Check submission
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - run: pip install pyyaml
+
+      - name: Validate changed submission
+        if: github.event_name == 'pull_request'
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          CHANGED=$(git diff --name-only --diff-filter=AMR ${{ github.event.pull_request.base.sha }}...${{ github.event.pull_request.head.sha }})
+          echo "Changed files:"; echo "$CHANGED"
+          python scripts/validate.py --changed $CHANGED
+
+      - name: Validate all submissions
+        if: github.event_name == 'push'
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python scripts/validate.py
