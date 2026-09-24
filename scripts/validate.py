@@ -58,8 +58,16 @@ def check_repo_public(owner, name):
         return None
     if data.get("private"):
         return "repo is private. Make it public."
-    if data.get("size", 0) == 0:
-        return "repo is empty. Push at least one commit."
+    # GitHub's "size" field lags for new repos, so ask for a commit instead
+    req = urllib.request.Request(f"{url}/commits?per_page=1", headers=req.headers)
+    try:
+        with urllib.request.urlopen(req, timeout=15):
+            pass
+    except urllib.error.HTTPError as e:
+        if e.code == 409:  # GitHub's answer for a repo with no commits
+            return "repo is empty. Push at least one commit."
+    except Exception:
+        pass
     return None
 
 
