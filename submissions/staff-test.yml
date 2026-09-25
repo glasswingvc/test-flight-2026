@@ -1,0 +1,10 @@
+team_name: Staff Test
+slug: staff-test
+members:
+  - name: Calvin Cronin
+    github: calvincronin
+repo: https://github.com/glasswingvc/test-flight-2026
+description: Test submission to confirm the automatic check works. Will be closed without merging.
+customer: Glasswing staff
+live_url: ""
+prior_work: none
