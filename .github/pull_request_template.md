@@ -6,4 +6,4 @@ This adds one file: `submissions/<slug>.yml`
 - [ ] No API keys are committed in our repo
 - [ ] Everyone on the team is listed with name and GitHub handle
 
-Due 1:00 PM ET Sunday. Code freeze 2:00 PM ET.
+First PR due 1:00 PM ET Sunday. Code freeze 2:00 PM ET.

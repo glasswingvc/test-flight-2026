@@ -144,13 +144,19 @@ def main():
 
     failures = {}
     if args.changed is not None:
-        subs = [p for p in args.changed if p.startswith("submissions/")]
-        other = [p for p in args.changed if not p.startswith("submissions/")]
+        # only files directly in submissions/ count; a subfolder counts as outside it
+        subs = [p for p in args.changed
+                if p.startswith("submissions/") and "/" not in p[len("submissions/"):]]
+        other = [p for p in args.changed if p not in subs]
         if other:
             failures["PR"] = [f"PR changes files outside submissions/: {', '.join(other)}"]
         if len(subs) != 1:
             failures.setdefault("PR", []).append(
                 f"PR should add or edit exactly one submission file (found {len(subs)})")
+        for p in subs:
+            if not (ROOT / p).exists():
+                failures.setdefault("PR", []).append(
+                    f"PR should add or edit exactly one submission file, not delete one ({p})")
         if any(p.endswith("_TEMPLATE.yml") for p in subs):
             failures.setdefault("PR", []).append(
                 "don't edit _TEMPLATE.yml; copy it to submissions/<your-slug>.yml")
