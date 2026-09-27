@@ -1,0 +1,24 @@
+team_name: "SentryStack"
+slug: "safe-supplychain"
+
+# Everyone on the team, 1 to 6 people.
+members:
+  - name: "Peter Jang"
+    github: "byujan"
+  - name: "Connor Elkin"
+    github: "zenconnor"
+
+# Public GitHub repo with your code, e.g. https://github.com/you/project
+repo: "https://github.com/byujan/safe-supplychain"
+
+# One or two sentences, 280 characters max. What it does and for whom.
+description: "Every coding agent is an unreviewed install decision, dozens of times a day per engineer. safe-supplychain sits in the agent's loop, judges each software package before install, and gives AppSec the record. SCA checks CI; we check at runtime."
+
+# Who inside a company would use this.
+customer: "The CISO or Head of Application Security at a mid-to-large engineering organization that has rolled out coding agents. Bought from the AppSec / software supply chain security budget that today funds SCA and SBOM management and tooling"
+
+# Optional. Where a judge can try it.
+live_url: ""
+
+# "none" if you started from scratch. Otherwise, what you brought in from before the weekend.
+prior_work: "none"
