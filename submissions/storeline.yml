@@ -1,0 +1,16 @@
+team_name: "Storeline"
+slug: "storeline"
+
+members:
+  - name: "Maude Niemann"
+    github: "maudeniemann"
+
+repo: "https://github.com/maudeniemann/storeline-franchise-intelligence"
+
+description: "Storeline turns POS sales, public reviews, and market context into evidence-linked operating decisions for multi-location hospitality groups, then generates and tracks the approved campaign or store playbook."
+
+customer: "Franchise owners, regional operators, and operations leaders at multi-location cafés and restaurants"
+
+live_url: "https://storeline-franchise-intelligence.vercel.app/"
+
+prior_work: "none"
