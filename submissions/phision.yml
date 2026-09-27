@@ -1,0 +1,34 @@
+# Copy this file to submissions/<your-slug>.yml and fill it in.
+# The file name must match the slug. Lowercase letters, numbers and hyphens only.
+# First PR due 1:00 PM ET Sunday Sep 27. Code freeze 2:00 PM ET.
+
+team_name: "Phision"
+slug: "phision"
+
+# Everyone on the team, 1 to 6 people.
+members:
+  - name: "Rohan Malik"
+    github: "rohanmalik2005"
+  - name: "Juan Cerquera"
+    github: "JuanCerquera"
+  - name: "Maheen Rassell"
+    github: "mrassell"
+  - name: "Nicolas Peters Saa"
+    github: "Nodolas"
+  - name: "Jai Surya Gupta"
+    github: "ovevayrus"
+
+# Public GitHub repo with your code, e.g. https://github.com/you/project
+repo: "https://github.com/rohanmalik2005/Glasswing-Hackathon"
+
+# One or two sentences, 280 characters max. What it does and for whom.
+description: "Phision is an AI quality intelligence layer for pharma manufacturing. We connect batch records, sensor logs, lab results, and more to investigate deviations faster, identify root causes, and recommend corrective actions- cutting investigation time, cost, and production delays."
+
+# Who inside a company would use this.
+customer: "Quality managers on the day to day, with manufacturing managers in the long-run making strategic decisions"
+
+# Optional. Where a judge can try it.
+live_url: "https://www.phision.cloud"
+
+# "none" if you started from scratch. Otherwise, what you brought in from before the weekend.
+prior_work: "None"
