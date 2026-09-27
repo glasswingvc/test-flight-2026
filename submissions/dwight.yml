@@ -12,6 +12,7 @@ members:
   - name: "Rajvi Gemawat"
     github: "rgemawat2000"
   - name: "Mark Verhoeven"
+    github: "markus-pocuss"
 
 # Public GitHub repo with your code, e.g. https://github.com/you/project
 repo: "https://github.com/shashank-k-07/dwight-ai"
