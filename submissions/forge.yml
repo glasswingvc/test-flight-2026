@@ -1,0 +1,22 @@
+team_name: "FORGE"
+slug: "forge"
+
+members:
+  - name: "Ujjal Dutta"
+    github: "ujjald00"
+  - name: "Sasa Phanitsombat"
+    github: "sasap91"
+  - name: "Dave Gogi"
+    github: "PocketP1ck"
+  - name: "Felix"
+    github: "fgawah"
+
+repo: "https://github.com/sasap91/ShiftOS"
+
+description: "FORGE helps manufacturing teams recover from shared test-station failures by reconciling CRM, ERP and MES evidence, comparing feasible recovery plans, and preserving human approval with replayable receipts."
+
+customer: "Manufacturing, supply-planning, quality, maintenance and shipping leaders at complex industrial manufacturers; the buyer is the VP of Operations or Supply Chain."
+
+live_url: ""
+
+prior_work: "An earlier FORGE decision-room prototype, synthetic CRM/ERP/MES fixture, conceptual shop-floor layout and planning/design documents were brought in. The shared test-station recovery workflow, deterministic alternatives, approval/receipt flow, grounded AI layer and UI refinements were built during Test Flight."
