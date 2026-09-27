@@ -5,7 +5,7 @@ slug: voight-kampff
 members:
   - name: Frank-7
     github: Frank-7
-repo: https://github.com/Frank-7/Voight-Kampff
+repo: https://github.com/Electronukem/Voight-Kampff2
 description: "Refusal testing for embodied AI: safety evaluation that runs in the physical world."
 customer: "TBD - team to confirm"
 live_url: ""
