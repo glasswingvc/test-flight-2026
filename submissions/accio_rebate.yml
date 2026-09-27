@@ -1,0 +1,20 @@
+team_name: "Accio_Rebate"
+slug: "accio_rebate"
+
+members:
+  - name: "Harini Thirunavukkarasan"
+    github: "harini0-0"
+  - name: "Tashwin Sasalu Jagadeesha"
+    github: "Tashwinsj"
+  - name: "Lavanya Ramasamy"
+    github: "rlavanya1597"
+
+repo: "https://github.com/harini0-0/TestFlight"
+
+description: "A control plane for supplier contracts: upload contracts, rebates, discounts, service levels and payment terms, compile them into one approved rule engine, then check live invoices against it to catch value leakage."
+
+customer: "Procurement and finance teams at mid-size companies that manage supplier contracts and want to catch invoice and rebate leakage."
+
+live_url: "https://glasswing-web.onrender.com"
+
+prior_work: "none"
