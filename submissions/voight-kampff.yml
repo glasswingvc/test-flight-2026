@@ -1,0 +1,12 @@
+# Submitted by Glasswing staff on the team's behalf at 1:00 PM (their fork kept failing).
+# Team: please correct the team name, add teammates, and fill in customer and prior_work.
+team_name: Voight-Kampff
+slug: voight-kampff
+members:
+  - name: Frank-7
+    github: Frank-7
+repo: https://github.com/Frank-7/Voight-Kampff
+description: "Refusal testing for embodied AI: safety evaluation that runs in the physical world."
+customer: "TBD - team to confirm"
+live_url: ""
+prior_work: "TBD - team to confirm"
